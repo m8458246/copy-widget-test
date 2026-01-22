@@ -6,7 +6,7 @@ import android.os.Bundle
 class MainActivity : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        // 这里什么都不用做，我们只需要 Widget 功能
-        // 甚至连 setContentView 都不需要，打开就是一个白屏然后可以关掉
+        // 这是一个空的主页，因为我们主要用 Widget
+        // 打开后可以手动关闭
     }
 }
