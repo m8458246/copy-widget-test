@@ -39,7 +39,7 @@ publishing {
 
             pom {
                 description.set("A template for Kotlin Android projects")
-                url.set("https://github.com/cortinico/kotlin-android-template/")
+                url.set("https://github.com/m8458246/copywidgettest/")
 
                 licenses {
                     license {
@@ -49,18 +49,18 @@ publishing {
                 }
                 developers {
                     developer {
-                        id.set("cortinico")
-                        name.set("Nicola Corti")
+                        id.set("m8458246")
+                        name.set("m8458246")
                     }
                 }
                 scm {
-                    connection.set("scm:git:git://github.com/cortinico/kotlin-android-template.git")
-                    developerConnection.set("scm:git:ssh://github.com/cortinico/kotlin-android-template.git")
-                    url.set("https://github.com/cortinico/kotlin-android-template/")
+                    connection.set("scm:git:git://github.com/m8458246/copywidgettest.git")
+                    developerConnection.set("scm:git:ssh://github.com/m8458246/copywidgettest.git")
+                    url.set("https://github.com/m8458246/copywidgettest/")
                 }
                 issueManagement {
                     system.set("GitHub Issues")
-                    url.set("https://github.com/cortinico/kotlin-android-template/issues")
+                    url.set("https://github.com/m8458246/copywidgettest/issues")
                 }
             }
         }
