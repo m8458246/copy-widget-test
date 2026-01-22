@@ -1,31 +1,12 @@
-package com.github.m8458246.copywidgettest.app
+package com.example.simplecopy
 
-import androidx.test.espresso.Espresso.onView
-import androidx.test.espresso.action.ViewActions.click
-import androidx.test.espresso.action.ViewActions.closeSoftKeyboard
-import androidx.test.espresso.action.ViewActions.typeText
-import androidx.test.espresso.assertion.ViewAssertions.matches
-import androidx.test.espresso.matcher.ViewMatchers.isDisplayed
-import androidx.test.espresso.matcher.ViewMatchers.withId
-import androidx.test.espresso.matcher.ViewMatchers.withText
-import androidx.test.ext.junit.rules.activityScenarioRule
-import androidx.test.ext.junit.runners.AndroidJUnit4
-import org.junit.Rule
-import org.junit.Test
-import org.junit.runner.RunWith
+import android.app.Activity
+import android.os.Bundle
 
-@RunWith(AndroidJUnit4::class)
-class MainActivityTest {
-
-    @get:Rule
-    val rule = activityScenarioRule<MainActivity>()
-
-    @Test
-    fun typeANumber_resultIsDisplayed() {
-        onView(withId(R.id.edit_text_factorial)).perform(typeText("1"), closeSoftKeyboard())
-        onView(withId(R.id.button_compute)).perform(click())
-
-        onView(withId(R.id.text_result)).check(matches(isDisplayed()))
-        onView(withId(R.id.text_result)).check(matches(withText("1")))
+class MainActivity : Activity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        // 这里什么都不用做，我们只需要 Widget 功能
+        // 甚至连 setContentView 都不需要，打开就是一个白屏然后可以关掉
     }
 }
