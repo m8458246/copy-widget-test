@@ -15,9 +15,9 @@ android {
 
     defaultConfig {
         minSdk = libs.versions.min.sdk.version.get().toInt()
-        namespace = APP_ID
+        namespace = "com.example.simplecopy"
 
-        applicationId = APP_ID
+        applicationId = "com.example.simplecopy"
         versionCode = APP_VERSION_CODE.toInt()
         versionName = APP_VERSION_NAME
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
