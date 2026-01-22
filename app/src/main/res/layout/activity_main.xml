@@ -1,73 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:animateLayoutChanges="true"
-    android:padding="@dimen/doub_grid_size"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center_horizontal">
 
     <TextView
-        android:id="@+id/title"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/title"
-        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-        app:layout_constraintBottom_toTopOf="@id/description"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/description"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginVertical="@dimen/base_grid_size"
-        android:text="@string/description"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        app:layout_constraintBottom_toTopOf="@id/edit_text_factorial"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:text="配置微件内容"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="30dp"/>
 
     <EditText
-        android:id="@+id/edit_text_factorial"
+        android:id="@+id/edit_content_1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/factorial_hint"
-        android:importantForAutofill="no"
-        android:inputType="number"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/description"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:hint="输入第一行内容 (如身份证)"
+        android:layout_marginBottom="20dp"/>
 
-    <TextView
-        android:id="@+id/text_result"
-        style="@style/TextAppearance.AppCompat.Display1"
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/edit_content_2"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/doub_grid_size"
-        android:visibility="gone"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/edit_text_factorial"
-        tools:text="42"
-        tools:visibility="visible" />
+        android:hint="输入第二行内容 (如手机号)"
+        android:layout_marginBottom="30dp"/>
 
     <Button
-        android:id="@+id/button_compute"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="wrap_content"
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/doub_grid_size"
-        android:text="@string/compute"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_result" />
+        android:text="保存并更新微件"
+        android:backgroundTint="#2196F3"/>
 
-    <Button
-        android:id="@+id/button_appcompose"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/compose_version"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
